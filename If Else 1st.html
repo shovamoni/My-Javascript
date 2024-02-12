@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="if" placeholder="Enter Your Number"><br> <br>
+    <button type="button" onclick="ab()">Onclick</button>
+    <div id="r">
+
+    </div>
+    <script>
+        function ab (){
+            let x= parseFloat(document.getElementById("if").value);
+            if(x%2 == 0){
+                document.getElementById("r").innerHTML= "Even Number";
+
+            }
+            else {
+                document.getElementById("r").innerHTML= "Odd Number";
+              
+            }
+        }
+    </script>
+</body>
+</html>

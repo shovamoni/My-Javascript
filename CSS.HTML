@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ #box{
+    width:0px;
+   
+    height: 100%;
+    background-color: aqua;
+    position: fixed;
+    overflow-x: hidden;
+   
+  a{
+    text-decoration: none;
+ }
+ }
+    </style>
+</head>
+<body>
+    <div id="box">
+
+        <a href="#">MONISHA</a><br><br>
+        <a href="#">SHOVA</a><br><br>
+        <a href="#">MUMU</a>
+    </div>
+    <button type="button" onclick="come()">Click</button>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, dolore facere iste obcaecati voluptatibus
+         ea in nesciunt suscipit tempore,
+         temporibus nam illo fugiat esse nostrum mollitia sequi optio. Rerum, maxime!</p>
+        
+<script>
+    function come(){
+
+        document.getElementById('box').style.width ='20%';
+        document.getElementById('box').style.backgroundColor='pink';
+    }
+</script>
+</body>
+</html>

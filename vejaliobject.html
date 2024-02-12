@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <p id="cat">
+    
+     </p>
+        <p id="dog">
+    
+        </p>
+        <p id="bird"></p>
+     <p id="x"></p>
+    
+    <p id="dog2"></p>
+    
+    
+        <script>
+    
+             const cat = {
+    
+             Name:"Mili",
+             age:5,
+             color:"brown",
+             food:"Fish, Milk & Meat",
+             eyecolor:"brown",
+    
+            lname:  function(){
+                
+               return this.Name+" " +this.age;
+            }
+             };
+             document.getElementById('x').innerHTML=cat.lname();
+     
+             cat.eyecolor="Red";
+             
+             const dog  =  {
+               Name:"Tiger",
+               age:10,
+               color:"black",
+               food:"fish, milk & meat"
+           };
+    
+         
+
+           const bird =  {
+    
+             Name:"Parrot",
+             age:5,
+             color:"green",
+             food: "seeds"
+           };
+    
+           document.getElementById('cat').innerHTML= "CAT :" + cat.Name +  " " + cat.color + " " + cat.age +" " +cat.food +" "+cat.eyecolor;
+           document.querySelector('#cat').style.color="brown";
+    
+           document.getElementById('dog').innerHTML= "DOG :" + dog.Name +  " " + dog.color + " " + dog.age +" " +dog.food;
+           document.querySelector('#dog').style.color="red";
+    
+           document.getElementById('bird').innerHTML= "BIRD :" + bird.Name +  " " + bird.color + " " + bird.age +" " +bird.food;
+           document.querySelector('#bird').style.color="green";
+      
+           const dog2 = new dog ("Tiger", 10, "black", "fish, meat, & milk");
+    
+           document.write(dog2.name);
+           document.write(dog2.age);
+           document.write(dog2.color);
+           document.write(dog2.food);
+    
+</script>    
+</body>
+</html>

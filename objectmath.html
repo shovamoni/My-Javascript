@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+   // document.write(Math.PI +"<br>");
+   // document.write(Math.random +"<br>");
+   // document.write(Math.round(4.9));
+
+    //const Myself={
+    //name: 'ShovaMoni',
+    //age: 23,
+    //student: true,
+    //hairecolor:'black',
+    //getit: function(){
+        //document.write('I am a Student'+ "<br> "+ this.age+" <br>"+this.hairecolor);
+   // }
+//};
+  
+//Myself.getit();
+
+function Student(name, age, cgpa, lang ){
+       this.name=name;
+       this.age=age;
+       this.cgpa=cgpa;
+       this.lang=lang;
+
+       this.Student = function(){
+        document.write(this.name);
+        document.write(this.age);
+        document.write(this.cgpa);
+        document.write(this.lang);
+
+       }
+};
+       let student1=new Student('Riodinas',27,3.92,"Bengli", "English", "Hindi");
+       let student2=new Student('Sufia',20,3.92,"Bengli", "English", "Hindi");
+       let student3=new Student('Riodinas',27,3.92,"Bengli", "English", "Hindi");
+
+       student1.Student();
+
+
+
+   //document.write(student1.name);
+  // document.write(student1.age);
+   //document.write(student1.cgpa);
+   //document.write(student1.lang);
+
+   document.write(student2.name);
+   document.write(student2.age);
+   document.write(student2.cgpa);
+   document.write(student2.lang);
+
+
+
+
+//const student1={
+    name: 'Riodinas',
+    age: 27,
+    cgpa:3.92,
+    hairecolor:'brown',
+    lang: ["Bengli", "English", "Hindi"]
+}
+//const student2={
+    name: 'Sufia',
+    age: 27,
+    cgpa:4.45,
+    hairecolor:'brown',
+    lang: ["Bengli", "English", "Hindi"]
+}
+
+//const student3={
+    name: 'Asa',
+    age: 27,
+    cgpa:3.92,
+    hairecolor:'brown',
+    lang: ["Bengli", "English","Urdu", "Hindi"]
+}
+
+   document.write(student1.name);
+
+    </script>
+
+
+
+
+</body>
+</html>

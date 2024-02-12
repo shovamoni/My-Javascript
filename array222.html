@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="s"></p>
+    <p id="r"></p>
+    <p id="r1"></p>
+    <p id="r2"></p>
+    <p id="r3"></p>
+    <p id="r4"></p>
+    <p id="r5"></p>
+    <p id="r6"></p>
+    <p id="r7"></p>
+    <p id="r8"></p>
+    <p id="r9"></p>
+    <p id="r10"></p>
+    <p id="r11"></p>
+    <p id="r12"></p>
+    <script>
+        
+        //const ab=['shova', 'nuhita','Isani'];
+        //ab.splice(0,2,'Takiya');
+        //document.getElementById('s').innerHTML= 'splice='+ab;
+
+        const myarray = ['Shova', 'Isani', 'Nuhita','Mahira','Tuli'];
+        function printallarray(){
+
+            document.getElementById('r').innerHTML = 'print all array='+myarray;
+        }
+        function print5thelement(){
+            const sz= myarray.length;
+            document.getElementById('r1').innerHTML= '5th element of array='+myarray[sz-1];
+        }
+        function arraysize(){
+            document.getElementById('r2').innerHTML='size of array='+myarray.length;
+
+        }
+        function arraysort(){
+            document.getElementById('r3').innerHTML='sort array=' +myarray.sort();
+        }
+        function check(){
+            document.getElementById('r4').innerHTML='Have "ab" ?='+myarray.includes("ab");
+
+        }
+        function joint(){
+            document.getElementById('r5').innerHTML='join "$" each element='+myarray.join('$');
+
+        }
+        function arraypop(){
+            myarray.pop();
+            document.getElementById('r6').innerHTML='array pop='+myarray;
+        }
+        function arraypush(){
+            myarray.push('Adrita');
+            document.getElementById('r7').innerHTML='array push='+myarray;
+        }
+        function arrayshift(){
+            myarray.shift();
+            document.getElementById('r8').innerHTML='array shift='+myarray
+        }
+        function arrayunshift(){
+            myarray.unshift('Toni');
+            document.getElementById('r9').innerHTML='array unshift='+myarray;
+        }
+        function arrayindexdelet(){
+            delete myarray[3];
+            document.getElementById('r10').innerHTML='delete 3 index='+myarray;
+        }
+        const a=['Saima','Ruhi','Sraboni'];
+        function arrayconcat(){
+            const addtwo = myarray.concat(a);
+            document.getElementById('r11').innerHTML='array concat='+myarray;
+
+        }
+        function all_work_print(){
+            printallarray();
+            print5thelement();
+            arraysize();
+            arraysort();
+            check();
+            joint();
+            arraypop();
+            arraypush();
+            arrayshift();
+            arrayunshift();
+            arrayindexdelet();
+            arrayconcat();
+            arrayslice();
+        }
+        all_work_print();
+    </script>
+</body>
+</html>

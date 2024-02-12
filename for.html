@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="myname()">Click</button>
+    <p id="nm">
+
+    </p>
+
+    <script>
+          function myname(){
+            let p='';
+            for( x=0; x < 9; x++){
+
+                p = p.concat(x+ 'shova', '<br>');
+
+
+
+                //document.write(x + "<br>");//
+    
+                document.getElementById('nm').innerHTML=p;
+            }
+        }
+    </script>
+</body>
+</html>    

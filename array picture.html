@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          #flex-container{
+        display: flex;
+        background-image: url('./img1.jpg');
+        background-size: cover;
+        height: 600px;
+        align-items: center;
+        background-repeat: no-repeat;
+        
+      }
+      h1{
+        text-align: center;
+        text-decoration: underline;
+      }
+      .p{
+        flex:50%
+      }
+      button{
+        font-size: 20px;
+        font-weight: bold;
+        padding: 5px;
+        text-decoration: none;
+        border-radius:10px;
+      }
+      button:hover{
+        background-color: rgb(165, 159, 159);
+      }
+    </style>
+</head>
+<body>
+    <h1>My Travell</h1>
+        <div id="flex-container">
+            <div class="n"></div>
+            <button type="button"  onclick="prev()">Previous</button>
+            <div class="p"></div>
+            <button type="button" onclick="next()">Next</button>
+        </div> 
+        
+    </div>
+    <script>
+        const mypic=["img2.jpg" ,"img3.jpg", "img4.jpg", "img5.jpg", "img7.png"];
+        var i= 0;
+
+        function prev(){
+            if(i<=0) 
+            i=mypic.length;
+            i--;
+            document.getElementById('flex-container').style.backgroundImage='url(" ' +mypic[i] +'")';
+           
+        
+        }
+
+        function next(){
+
+            if(i>=0)
+            mypic.length;
+            i++;
+
+    document.getElementById('flex-container').style.backgroundImage= 'url(" ' +mypic[i] +'")';
+   
+  
+   }
+    </script>
+</body>
+</html>

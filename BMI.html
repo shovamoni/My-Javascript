@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        font-family: 'poppins', sans-serif;
+
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: rgb(111, 164, 243);
+    }
+.box{
+width: 500px;
+background: rgb(240, 209, 209);
+text-align: center;
+box-shadow: 2px 2px 20px 5px black;
+}
+h2{
+    color: black;
+    font-weight: bold;
+    font-size: 36px;
+    padding: 30px 0;
+}
+.content{
+    padding: 0 30px;
+}
+
+.input{
+    background: whitesmoke;
+    box-shadow: 0px 0px 95px -30px black;
+    border-radius: 12px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.input label{
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color:black;
+    margin-bottom: 20px;
+}
+
+.input input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid blue;
+    width: 50%;
+    text-align: center;
+    font-size: 28px;
+}
+.inputW{
+    background: whitesmoke;
+    box-shadow: 0px 0px 95px -30px black;
+    border-radius: 12px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+#comment{
+    color:aqua;
+    font-weight: 800;
+}
+.comment{
+    display: none;
+    border: dashed 1px;
+    border-radius: 7px;
+    padding: 5px;
+}
+.gender{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: whitesmoke;
+    box-shadow: 0px 0px 95px -30px black;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+.gender .container{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-top: 7px;
+    cursor:pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+
+}
+.gender .container input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.chekmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(227, 243, 243);
+    border-radius: 50%;
+}
+.gender .container:hover input 
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>BMI Calculator</h2>
+            <div class="content">
+
+                <diiv class="input">
+                    <label for="height">Age</label>
+                    <input type="text" class="text-input" id="age" autocomplete="off" required/>
+                </diiv>
+                <div class="gender">
+                    <label class="container">
+                        <input type="radio" name="radio" id="m"><p class="text">Male</p>
+                        <span class="chekmark"></span>
+                    </label>
+
+                    <div class="gender">
+                        <label class="container">
+                            <input type="radio" name="radio" id="f"><p class="text">Female</p>
+                            <span class="chekmark"></span>
+                        </label>
+                </div>
+                <div class="containerHW">
+                    <div class="inputH">
+                        <label for="height">Height(cm)</label>
+                        <input type="number" id="height" required>
+                    </div>
+                </div>
+                <button class="calculate" id="submit" onclick="calculate();">Calculate BMI</button>
+            </div>
+          <div class="result">
+            <p>Your BMI is</p>
+            <div id="result">00.00</div>
+            <p class="coment"></p>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

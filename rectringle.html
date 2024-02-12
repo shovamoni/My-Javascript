@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="r">
+
+    </p>
+     
+    <script>
+        //const rectringle={
+//name:'rectringle',
+           // lenth:6,
+            //width:5,
+
+        //}
+       // document.getElementById('r').innerHTML=rectringle.name+' '+rectringle.lenth+' '
+
+       function area(a,b){ 
+        this.x=a;
+        this.y=b;
+        this.sum= function(){
+            let s = this.x* this.y;
+             return s;
+        }   
+        
+        this.mus= function(){
+            let s = this.x* this.y;
+            return s;
+        }
+       }
+       const tringle= new area (10,5);
+
+       const rectr=new area (10);
+
+document.getElementById('r').innerHTML=tringle.sum();
+document.querySelector('.r').innerHTML=tringle.mus();''
+
+
+
+
+    </script>
+
+</body>
+</html>
